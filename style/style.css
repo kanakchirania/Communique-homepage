@@ -1,0 +1,95 @@
+:root {
+  --light-bg: #E9E3E6;
+  --card-bg: #C3BABA;
+  --dark-text: #736F72;
+  --accent: #9A8F97;
+  --divider: #B2B2B2;
+}
+
+.governor-section {
+  background: var(--light-bg);
+  padding: 90px 10%;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.governor-section h2 {
+  text-align: center;
+  font-size: 60px;
+  color: #575356;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+.gov-subtitle {
+  text-align: center;
+  color: var(--accent);
+  font-size: 16px;
+  margin-bottom: 60px;
+}
+
+.governor-card {
+  display: flex;
+  gap: 40px;
+  background: var(--card-bg);
+  border-radius: 18px;
+  padding: 35px;
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.gov-photo img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 3px solid var(--accent);
+}
+
+.gov-info h3 {
+  font-size: 26px;
+  color: var(--dark-text);
+  margin-bottom: 6px;
+}
+
+.gov-info span {
+  display: block;
+  font-size: 15px;
+  color: var(--accent);
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.gov-info p {
+  font-size: 16px;
+  color: var(--dark-text);
+  line-height: 1.6;
+  max-width: 520px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.gov-socials {
+  margin-top: 15px;
+}
+
+.gov-socials img {
+  width: 28px;
+  height: 28px;
+  margin-right: 12px;
+  cursor: pointer;
+}
