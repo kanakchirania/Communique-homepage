@@ -1,95 +1,133 @@
 :root {
-  --light-bg: #E9E3E6;
-  --card-bg: #C3BABA;
-  --dark-text: #736F72;
-  --accent: #9A8F97;
-  --divider: #B2B2B2;
+    --navy: #020659;
+    --deep-blue: #0277BD;
+    --aqua: #00B4D8;
+    --sky: #90E0EF;
+    --ice: #CAF0F8;
 }
 
-.governor-section {
-  background: var(--light-bg);
-  padding: 90px 10%;
-  font-family: 'Segoe UI', sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-.governor-section h2 {
-  text-align: center;
-  font-size: 60px;
-  color: #575356;
-  letter-spacing: 0.5px;
-  margin-bottom: 10px;
+.navbar {
+    background: linear-gradient(90deg, var(--navy), var(--deep-blue));
+    padding: 16px 0;
 }
 
-.gov-subtitle {
-  text-align: center;
-  color: var(--accent);
-  font-size: 16px;
-  margin-bottom: 60px;
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 28px;
 }
 
-.governor-card {
-  display: flex;
-  gap: 40px;
-  background: var(--card-bg);
-  border-radius: 18px;
-  padding: 35px;
-  margin-bottom: 40px;
-  align-items: center;
+.navbar ul li a {
+    color: var(--ice);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    padding: 4px 0;
+    transition: color 0.3s ease;
 }
 
-.gov-photo img {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 14px;
-  border: 3px solid var(--accent);
+/* Elegant underline hover */
+.navbar ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+    background-color: var(--aqua);
+    transition: width 0.3s ease;
 }
 
-.gov-info h3 {
-  font-size: 26px;
-  color: var(--dark-text);
-  margin-bottom: 6px;
+.navbar ul li a:hover {
+    color: var(--sky);
 }
 
-.gov-info span {
-  display: block;
-  font-size: 15px;
-  color: var(--accent);
-  letter-spacing: 1px;
-  margin-bottom: 15px;
+.navbar ul li a:hover::after {
+    width: 100%;
 }
 
-.gov-info p {
-  font-size: 16px;
-  color: var(--dark-text);
-  line-height: 1.6;
-  max-width: 520px;
+/* ================= FOOTER ================= */
+.footerContainer {
+    background: linear-gradient(180deg, var(--deep-blue), var(--navy));
+    padding: 45px 0 25px;
+    text-align: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.gov-socials {
-  margin-top: 15px;
+/* Social Icons */
+.socialIcons {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    margin-bottom: 30px;
 }
 
-.gov-socials img {
-  width: 28px;
-  height: 28px;
-  margin-right: 12px;
-  cursor: pointer;
+.socialIcons a {
+    width: 46px;
+    height: 46px;
+    background: rgba(202, 240, 248, 0.15);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(6px);
+    transition: all 0.35s ease;
+    text-decoration: none;
+}
+
+.socialIcons a i {
+    color: var(--ice);
+    font-size: 19px;
+}
+
+/* Soft lift effect */
+.socialIcons a:hover {
+    background: var(--aqua);
+    transform: translateY(-6px);
+}
+
+.socialIcons a:hover i {
+    color: var(--navy);
+}
+
+/* Footer Bottom */
+.footerBottom {
+    border-top: 1px solid rgba(202, 240, 248, 0.25);
+    padding-top: 16px;
+}
+
+.footerBottom p {
+    font-size: 14px;
+    color: var(--sky);
+    letter-spacing: 0.4px;
+}
+
+.footerBottom .designer {
+    margin-left: 6px;
+    color: var(--ice);
+    font-weight: 500;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .navbar ul {
+        gap: 18px;
+    }
+
+    .navbar ul li a {
+        font-size: 14px;
+    }
+
+    .socialIcons {
+        gap: 16px;
+    }
 }

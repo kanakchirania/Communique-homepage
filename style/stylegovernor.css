@@ -1,0 +1,148 @@
+
+.governor-section {
+  background: #CAF0F8;
+  padding: 25px 10%;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.governor-section h3 {
+  text-align: center;
+  font-size: 70px;
+  color: #03045E ;
+  letter-spacing: 0.5px;
+  margin-bottom: 5px;
+}
+
+.gov-subtitle {
+  text-align: center;
+  color: #0077B6;
+  font-size: 30px;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 60px;
+}
+
+.governor-card {
+  display: flex;
+  gap: 85px;
+  background: #90E0EF;
+  border-radius: 18px;
+  padding-left: 85px;
+  padding-right: 85px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.gov-photo img {                                 
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 7px solid #00B4D8;
+}
+
+.gov-photo img:hover{
+  transform: scale(1.2);
+}
+
+.gov-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.gov-info h4 {
+  font-size: 55px;
+  color: #03045E;
+  margin-bottom: 6px;
+  margin-top: 0;
+}
+
+.gov-info h2 {
+  display: block;
+  font-size: 35px;
+  font-family: 'Inter', sans-serif;
+  color: #0077B6;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+.gov-info p {
+  font-size: 23px;
+  color: #0077B6;
+  line-height: 1.6;
+  max-width: 520px;
+  font-family: 'Inter', sans-serif;
+}
+
+.gov-socials {
+  display: flex;
+  flex-direction: row;     
+  gap: 14px;               
+  margin-top: 14px;
+  align-items: center;
+}
+
+.gov-socials a {
+  width: 42px;
+  height: 42px;
+  background-color:#03045E;  
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.social-icon {
+  width: 18px;
+  height: 18px;
+  fill: white   
+}
+
+.gov-socials a:hover {
+  transform: scale(1.2);
+}
+
+.gov-socials a[href*="facebook"]:hover .social-icon path {
+  fill: #0fdcef; 
+}
+
+.gov-socials a[href*="linkedin"]:hover .social-icon path {
+  fill: #0fdcef;
+}
+
+
+.gov-slides {
+  display: flex;
+  width: 700%; 
+  animation: govSlideResponsive 28s infinite cubic-bezier(0.45, 0, 0.50, 1);
+}
+
+.gov-slide {
+  width: 14.2857%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+@keyframes govSlideResponsive {
+  0%, 10%   { transform: translateX(0); }
+  14%, 24%  { transform: translateX(-14.2857%); }
+  28%, 38%  { transform: translateX(-28.5714%); }
+  42%, 52%  { transform: translateX(-42.8571%); }
+  56%, 66%  { transform: translateX(-57.1428%); }
+  70%, 80%  { transform: translateX(-71.4285%); }
+  84%, 94%  { transform: translateX(-85.7142%); }
+}
+
+
+
+
