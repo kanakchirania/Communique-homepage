@@ -1,6 +1,5 @@
 .contact-section {
-  background-color: #CAF0F8;
-  /* lightest palette */
+  background-color: #CAF0F8;  /* lightest palette */
   padding: 70px 20px;
 }
 
@@ -25,8 +24,7 @@
   display: flex;
   gap: 60px;
 
-  background: #90E0EF;
-  /* darker than page bg */
+  background: #90E0EF;   /* darker than page bg */
   padding: 50px;
   border-radius: 22px;
 
@@ -56,7 +54,7 @@
   background: #ffffff;
   padding: 30px;
   border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -80,7 +78,7 @@
 .contact-form button {
   width: 100%;
   padding: 12px;
-  background: #03045E;
+  background: #03045E ;
   color: white;
   border: none;
   border-radius: 12px;
@@ -94,15 +92,40 @@
   transform: scale(1.2);
 }
 
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .contact-wrapper {
-    flex-direction: column;
-    gap: 40px;
+/* RESPONSIVE STYLES */
+@media screen and (max-width: 768px) {
+  .contact-section {
+    padding: 40px 15px; /* Reduced padding for mobile */
   }
 
   .contact-heading {
-    font-size: 26px;
+    font-size: 32px; /* Smaller heading */
+    margin-bottom: 30px;
+  }
+
+  .contact-wrapper, 
+  .contact-box {
+    flex-direction: column; /* Stacks the info and form vertically */
+    gap: 30px; /* Reduced gap between elements */
+    padding: 25px; /* Smaller internal padding */
+  }
+
+  .contact-info, 
+  .contact-form {
+    width: 100%; /* Ensures elements take full width */
+    flex: none;
+  }
+
+  .contact-text {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .contact-detail {
+    text-align: center;
+  }
+
+  .contact-form button:hover {
+    transform: scale(1.05); /* Reduced scale effect for mobile stability */
   }
 }
