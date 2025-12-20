@@ -143,6 +143,13 @@
   84%, 94%  { transform: translateX(-85.7142%); }
 }
 
+.section-divider {
+  border: none;
+  height: 2px;
+  background-color: #03045E ;
+  width: 100%;
+  margin: 60px auto;
+}
 
 
 
